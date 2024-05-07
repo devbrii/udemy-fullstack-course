@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .main-container {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        /* background-color: #000; */
+      }
+
+      .grid-container {
+        width: 748px;
+        height: 748px;
+        background-color: #000;
+        display: grid;
+        gap: 9px;
+        grid-template-rows: 414px 130px 155px 20px;
+        grid-template-columns: 320px 198px 153px 50px;
+      }
+
+      .red {
+        background-color: #e72f24;
+      }
+
+      .first {
+        grid-column: span 3;
+      }
+
+      .second {
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+      
+      .third {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      .blue {
+        background-color: #004592;
+        border-bottom: 10px;
+      }
+
+      .fourth {
+        grid-row: span 2;
+      }
+
+      .fifth {
+        grid-row: span 2;
+      }
+
+
+      .yellow {
+        background-color: #f9d01e;
+      }
+
+      .black {
+        background-color: #232629;
+      }
+
+      .white {
+        background-color: #f0f1ec;
+      }
+
+
+
+      /*
+      Write your CSS here
+      Gap Colour: #000
+      White: #F0F1EC
+      Red: #E72F24
+      Black: #232629
+      Blue: #004592
+      Yellow: #F9D01E
+
+      For dimensions, see dimensions.png image.
+      HINT: Remember you can't change the properties of grid lines.
+      But grid lines are transparent!
+      */
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="grid-container">
+        <div class="red"></div>
+        <div class="white first"></div>
+        <div class="white second"></div>
+        <div class="white third"></div>
+        <div class="blue"></div>
+        <div class="white fourth"></div>
+        <div class="white fifth"></div>
+        <div class="yellow"></div>
+        <div class="black"></div>
+    </div>
+    <!-- Write your HTML here -->
+  </body>
+</html>

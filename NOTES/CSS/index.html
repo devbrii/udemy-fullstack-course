@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        border-color: #333;
+        border-style: solid;
+        justify-content: space-between;
+      }
+
+      .container > * {
+        border-color: red;
+        border-style: solid;
+        flex-basis: 200px;
+      }
+
+      .container > div:nth-child(2) {
+        flex-grow: 0;
+        flex-grow: 1;
+        /* flex-shrink: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="red">Lorem ipsum,</div>
+      <div class="red">Lorem ipsum,</div>
+      <div class="red">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium,
+        aperiam.
+      </div>
+    </div>
+  </body>
+</html>
