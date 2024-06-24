@@ -2,11 +2,9 @@ function randomNum(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-function play() {
+function rollDice() {
   var player1 = randomNum(1, 7);
   var player2 = randomNum(1, 7);
-  console.log(player1);
-  console.log(player2);
 
   changePlayer1 = document
     .querySelector("#player-1")
@@ -25,4 +23,4 @@ function play() {
   }
 }
 
-play();
+// rollDice();
